@@ -29,7 +29,7 @@ body {
     background-image: url(imgs/photos/about-background-photo.jpg);
     background-position: 0 25%;
     background-attachment: fixed;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 #menu {
@@ -90,6 +90,10 @@ li:hover {
     position: absolute;
     left: 47%;
     top: 85%;
+}
+
+#arrow-down:hover {
+    transform: translateY(1em);
 }
 
 #section2 {
