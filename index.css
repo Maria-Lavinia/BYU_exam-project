@@ -58,6 +58,14 @@ html {
   font-size: 45px;
   color: #ffd148;
 }
+.box3 {
+  position: absolute;
+  top: 2%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 10px;
+}
 
 /*NAVIGATION*/
 .header-nav {
@@ -94,24 +102,21 @@ html {
     border: transparent;
     height: 2vw;
     width: 2vw;
-  
   }
-  .haburger-container{
+  .haburger-container {
     height: 7vw;
-
   }
   .nav-toggle img {
     width: 7vw;
     height: 6vw;
     margin-left: 2.7vw;
   }
-  .nav-categories{
+  .nav-categories {
     height: 0;
     display: none;
-
   }
-  .show-categories{
-    display:inline;
+  .show-categories {
+    display: inline;
     flex-direction: column;
     height: 20rem;
   }
@@ -266,8 +271,8 @@ h1 {
 /*newsletter*/
 
 .newsletter {
-  position: relative;
-  top: -70vw;
+  position: absolute;
+  top: 137vw;
 }
 
 #box {
@@ -366,6 +371,9 @@ h1 {
 /*footer*/
 
 footer {
+  position: absolute;
+  top: 290vw;
+  width: 100%;
   margin-top: 0;
   background-color: #f9e1bd;
   padding: 0;
