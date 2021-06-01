@@ -71,7 +71,7 @@ html {
 .header-nav {
   height: 100%;
   width: 160px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -88,8 +88,42 @@ html {
   display: block;
 }
 
-.header-nav a:hover {
-  color: #f1f1f1;
+.menulink {
+  background: transparent;
+  border: none;
+  display: block;
+  font-size: 2vw;
+  position: relative;
+  transition: 0.3s;
+  color: #ffd148;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 5.5vw;
+  margin-left: 1vw;
+}
+
+.menulink:before {
+  content: "";
+  border-top: 3px solid #ffd148;
+  /* padding: 0 10px; -----maybe for phone */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+  max-width: 9vw;
+}
+.menulink:hover:before {
+  width: 100%;
+  padding: 0;
+}
+.menulink:active {
+  background: black;
+  color: white;
+  transition: none;
 }
 @media screen and (min-width: 800px) {
   .nav-toggle {
@@ -119,6 +153,9 @@ html {
     display: inline;
     flex-direction: column;
     height: 20rem;
+  }
+  .menulink:before {
+    border-top: none;
   }
 }
 
@@ -274,7 +311,6 @@ h1 {
   position: absolute;
   top: 137vw;
 }
-
 #box {
   height: 120vh;
   width: 90vw;
@@ -424,7 +460,38 @@ footer img {
   margin-left: 28vw;
   color: #345042;
 }
+.logo {
+  visibility: hidden;
+}
 @media screen and (max-width: 800px) {
+  footer {
+    position: absolute;
+    top: 660vw;
+    width: 100%;
+    margin-top: 0;
+    background-color: #f9e1bd;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    margin-top: 0;
+    margin-left: 5vw;
+  }
+  .logo {
+    visibility: visible;
+    position: absolute;
+    top: 20vw;
+    left: 65vw;
+  }
+
+  .logo img {
+    width: 20vw;
+    height: 20vw;
+  }
+
   footer a {
     font-size: 2.6vw;
     display: block;
@@ -441,12 +508,171 @@ footer img {
   .social-media {
     display: flex;
     justify-content: center;
-    margin-left: 20vw;
-    margin-top: 7vw;
+    margin-left: 70vw;
+    margin-top: 19vw;
   }
 
   .cards {
     display: flex;
     position: relative;
+  }
+}
+@media screen and (max-width: 800px) {
+  img1,
+  .img2 {
+    background-attachment: scroll;
+    max-width: 100%;
+    height: 100%;
+    background-size: 100%;
+  }
+
+  .bg-image {
+    /* Full height */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  .box1 {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    width: 5vw;
+    height: 10vw;
+  }
+  .box1 img {
+    width: 50vw;
+    height: 50vw;
+  }
+  .box2 {
+    position: absolute;
+    top: 140%;
+    left: 93%;
+    transform: translate(-100%, -30%);
+    width: 100px;
+    font-family: "Alice", serif;
+    font-size: 30px;
+    color: #ffd148;
+    text-align: center;
+  }
+
+  .box3 {
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    transform: translate(-100%, -30%);
+    width: 50px;
+    margin: 0;
+  }
+
+  #newsletter {
+    position: relative;
+    top: 500vw;
+  }
+
+  #box {
+    height: 60vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 330vw;
+    background-color: #f9e1bd;
+    top: 500vw;
+  }
+  #newsletter-title h1 {
+    top: 330vw;
+  }
+
+  #newsletter-photo {
+    position: relative;
+    width: 25vw;
+    z-index: 1;
+    left: 14vw;
+    top: 410vw;
+  }
+
+  #theform {
+    text-align: center;
+  }
+
+  #theform label,
+  #theform input {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    color: #345042;
+    z-index: 1;
+    font-size: 2vw;
+  }
+
+  #theform input {
+    border-radius: 20px;
+    border-color: #f9e1bd;
+  }
+
+  #name-label,
+  #name {
+    right: -40vw;
+    top: 380vw;
+  }
+
+  #email-label,
+  #email {
+    right: -10vw;
+    top: 385vw;
+  }
+
+  #button {
+    background-color: transparent;
+    color: #345042;
+    font-family: "Open sans", sans-serif;
+    font-size: 2vw;
+    padding: 7px 7px;
+    position: relative;
+    z-index: 1;
+    right: 1vw;
+    top: 400vw;
+  }
+
+  btn {
+    background: transparent;
+    border: none;
+    margin: 5vw auto 0;
+    display: block;
+    font-size: 40vw;
+    position: relative;
+    transition: 0.3s;
+    padding: 10px;
+    text-align: center;
+    color: #ffd148;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+  }
+
+  .btn:before {
+    content: "";
+    border-top: 3px solid #ffd148;
+    /* padding: 0 10px; -----maybe for phone */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+    max-width: 12vw;
+  }
+  .btn:hover:before {
+    width: 100%;
+    padding: 0;
+  }
+  .btn:active {
+    background: black;
+    color: white;
+    transition: none;
+  }
+  .btn1 {
+    margin-top: 1vw;
+    margin-left: 77vw;
+    max-width: 20vw;
   }
 }
