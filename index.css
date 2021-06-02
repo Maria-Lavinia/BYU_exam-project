@@ -121,7 +121,6 @@ html {
   padding: 0;
 }
 .menulink:active {
-  background: black;
   color: white;
   transition: none;
 }
@@ -219,7 +218,7 @@ h1 {
   padding: 0;
 }
 .btn:active {
-  background: black;
+  background: #345042;
   color: white;
   transition: none;
 }
@@ -230,86 +229,72 @@ h1 {
 }
 
 /* instagram slideshow*/
-.hi-slide {
-  position: relative;
-  width: 754px;
-  height: 292px;
-  margin: 115px auto 0;
+.container {
+  position: absolute;
 }
 
-.hi-slide .hi-next,
-.hi-slide .hi-prev {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  margin-top: 2vw;
+  margin-left: 35vw;
+  height: 40vw;
+  width: 30vw;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
   cursor: pointer;
-  background-color: #fefbf0;
-  color: black;
-  transition: all 0.7s;
-  font-size: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #345042;
   font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
 }
 
-.hi-slide .hi-next:hover,
-.hi-slide .hi-prev:hover {
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
   opacity: 1;
-  background-color: #fefbf0;
 }
-
-.hi-slide .hi-prev {
-  left: -100px;
-}
-
-.hi-slide .hi-prev::before {
-  content: "<";
-  color: #345042;
-}
-
-.hi-slide .hi-next {
-  right: -100px;
-}
-
-.hi-slide .hi-next::before {
-  content: ">";
-  color: #345042;
-}
-.hi-slide > ul {
-  list-style: none;
-  position: relative;
-  width: 754px;
-  height: 292px;
-  margin: 0;
-  padding: 0;
-}
-.hi-slide > ul > li {
-  overflow: hidden;
-  position: absolute;
-  z-index: 0;
-  left: 377px;
-  top: 147px;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border: 1px solid #ffd148;
-  background-color: #333;
-  cursor: pointer;
-}
-.hi-slide > ul > li > img {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-}
-
 /*newsletter*/
 
 .newsletter {
   position: absolute;
-  top: 137vw;
+  top: 210vw;
 }
 #box {
   height: 120vh;
@@ -400,7 +385,7 @@ h1 {
   padding: 7px 7px;
   position: relative;
   z-index: 1;
-  right: 1vw;
+  right: 3vw;
   top: 60vw;
 }
 
@@ -408,7 +393,7 @@ h1 {
 
 footer {
   position: absolute;
-  top: 290vw;
+  top: 370vw;
   width: 100%;
   margin-top: 0;
   background-color: #f9e1bd;
@@ -466,7 +451,7 @@ footer img {
 @media screen and (max-width: 800px) {
   footer {
     position: absolute;
-    top: 660vw;
+    top: 640vw;
     width: 100%;
     margin-top: 0;
     background-color: #f9e1bd;
@@ -565,21 +550,21 @@ footer img {
     margin: 0;
   }
 
-  #newsletter {
-    position: relative;
-    top: 500vw;
+  .newsletter {
+    position: absolute;
+    top: 450vw;
   }
 
   #box {
     height: 60vh;
     width: 90vw;
     margin-left: 5vw;
-    margin-top: 330vw;
+    margin-top: 2vw;
     background-color: #f9e1bd;
-    top: 500vw;
+    top: 200vw;
   }
   #newsletter-title h1 {
-    top: 330vw;
+    top: 7vw;
   }
 
   #newsletter-photo {
@@ -587,7 +572,7 @@ footer img {
     width: 25vw;
     z-index: 1;
     left: 14vw;
-    top: 410vw;
+    top: 80vw;
   }
 
   #theform {
@@ -611,13 +596,13 @@ footer img {
   #name-label,
   #name {
     right: -40vw;
-    top: 380vw;
+    top: 50vw;
   }
 
   #email-label,
   #email {
     right: -10vw;
-    top: 385vw;
+    top: 55vw;
   }
 
   #button {
@@ -629,7 +614,7 @@ footer img {
     position: relative;
     z-index: 1;
     right: 1vw;
-    top: 400vw;
+    top: 70vw;
   }
 
   btn {
@@ -675,4 +660,11 @@ footer img {
     margin-left: 77vw;
     max-width: 20vw;
   }
+  .art {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #345042;
+  }
+
 }

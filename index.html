@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYU STUDIO</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <header>
   <nav class="header-nav">
@@ -36,69 +37,82 @@
     </div>
 
     <h1>SHOW US YOUR ART</h1>
-    <p class ="art">Show us your favourite #MadeByYouForYou by mentioning @BYUstudio for a chance to be featured!</p>
+    <p data-aos="fade-left" data-aos-duration="1000" class ="art">Show us your favourite #MadeByYouForYou by mentioning @BYUstudio for a chance to be featured!</p>
 
     <div class="row">
         <div class="column">
-          <img src="/img/olive-tatiane-fxiFgP3lFIM-unsplash.jpg" alt="art1" style="width:100%">
+          <img data-aos="fade-right" data-aos-duration="1000" src="/img/olive-tatiane-fxiFgP3lFIM-unsplash.jpg" alt="art1" style="width:100%">
         </div>
         <div class="column">
-          <img src="/img/tyler-nix-fo83GD_AARE-unsplash (1).jpg" alt="art2" style="width:100%">
+          <img data-aos="fade-right" data-aos-duration="1000" src="/img/tyler-nix-fo83GD_AARE-unsplash (1).jpg" alt="art2" style="width:100%">
         </div>
         <div class="column">
-          <img src="/img/160763337_266735525045691_9091681147153620287_n.jpg" alt="art3" style="width:100%">
+          <img  data-aos="fade-left" data-aos-duration="1000"src="/img/160763337_266735525045691_9091681147153620287_n.jpg" alt="art3" style="width:100%">
         </div>
       </div>
       <a href="" class="btn btn1">SEEE MORE</a>
 
       <h1>FOLLOW US ON INSTAGRAM</h1>
-<div class="slide hi-slide">
-  <div class="hi-prev"></div>
-  <div class="hi-next"></div>
-  <ul>
-    <li>
-      <img src="/img/girl.jpg" alt="girl">
-  
-    </li>
-    <li> 
-      <img src="/img/hands.jpg" alt="hands">
-    </li>
-    <li>
-      <img src="/img/earrings.jpg" alt="earrings">
-    </li>
-    <li>
-      <img src="/img/girl.jpg" alt="girl">
-  
-    </li>
-    <li>
-      <img src="/img/girl.jpg" alt="girl">
-  
-    </li>
-    <li>
-      <img src="/img/girl.jpg" alt="girl">
-  
-    </li>
-    <li>
-      <img src="/img/girl.jpg" alt="girl">
-  
-    </li>
-  </ul>
-</div>
+      
+<!-- Container for the image gallery -->
+<div class="container">
 
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+  
+      <img data-aos="fade-right" data-aos-duration="1000" src="img/girl.jpg" >
+  </div>
+
+  <div class="mySlides">
+  
+      <img src="img/hands.jpg">
+  </div>
+
+  <div class="mySlides">
+
+      <img src="img/earrings.jpg">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/girl.jpg" style="width:100%" onclick="currentSlide(1)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/hands.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/earrings.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="img/girl.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/hands.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/earrings.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div> -->
+  </div>
+</div>
 
 <div class="newsletter">
   <div id="newsletter-title">
-      <h1>NEWSLETTER</h1>
+      <h1 data-aos="fade-right" data-aos-duration="1000">NEWSLETTER</h1>
   </div>
-  <img id="newsletter-photo" src="/img/roman-shilin-ULPtLz5sPCM-unsplash.jpg" alt="newsletter-photo">
+  <img data-aos="fade-left" data-aos-duration="1000" id="newsletter-photo" src="/img/roman-shilin-ULPtLz5sPCM-unsplash.jpg" alt="newsletter-photo">
   <div id="newsletter-form">
       <form id="theform">
           <label id="name-label" for="name">Name:</label>
           <input type="text" id="name" name="name">
           <label id="email-label" for="email">E-mail:</label>
           <input type="email" id="email" name="email">
-          <!-- <button id="submit" onclick="submitForm()">SUBMIT</button> -->
-          <input type="submit" id="button" value="SUBMIT" onclick= "submitForm()" />
+    
+          <input type="submit" id="button" value="SUBMIT"/>
       </form>
       <h3 id="response" class="hidden">Thank you for signing up!</h3>
   </div>
@@ -165,8 +179,10 @@
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="jquery.hislide.js"></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
