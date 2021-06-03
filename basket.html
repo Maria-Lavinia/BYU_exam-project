@@ -10,11 +10,33 @@
   </head>
   <body>
     <header>
+   
       <div class="navcontainer">
-        <img src="img/Logo-Black.svg" alt="logo" class="logo" />
+        <nav class="header-nav">
+
+          <div class="hamburger-container">
+            <button class="nav-toggle">
+              <img src="img/hamburger.png" alt="hamburger menu">
+            </button>
+          </div>
+          <div class="nav-categories">
+            <a class="menulink" href="#">HOME</a>
+            <a class="menulink" href="#">SHOP</a>
+            <a  class="menulink" href="#">ABOUT</a>
+            <a class="menulink" href="#">GUIDE</a>
+          </div>
+            
+            </nav>
+        <img src="img/Logo-White (1).svg" alt="logo" class="logo" />
       </div>
       <div class="steps">
         <img src="img/STEP1_1.png" alt="line with steps" class="step1" />
+        <div class="clicks">
+          <div class="first">
+          </div>
+          <div class="second"></div>
+          <div class="third"></div>
+      </div>
       </div>
     </header>
     <main>
@@ -30,16 +52,6 @@
           <div class="infoproduct">
             <h2 class="name">Product name</h2>
             <p class="price">Price: <span>123,45kr</span></p>
-            <!-- <label for="quantity"
-              >Quantity:
-              <input
-                type="number"
-                class="quantity"
-                min="0"
-                value="1"
-                id="quantity"
-              />
-            </label> -->
             <label for="quantity" class="labelq">Quantity:</label>
             <div class="quantity" id="quantity">
               <button onclick="dec()" class="minus">-</button>
@@ -64,15 +76,69 @@
             </form>
 <h3>We accept:</h3>
 <div class="cards">
-  <img src="img/mastercard.png" alt="mastercard icon">
-  <img src="img/visa.png" alt="visa icon" >
-  <img src="img/paypal.png" alt="paypal icon">
+  <img src="img/mastercard1.png" alt="mastercard icon">
+  <img src="img/visa1.png" alt="visa icon" >
+  <img src="img/paypal1.png" alt="paypal icon">
 </div>
-<a href="" class="btn">go to payment</a>
+<a href="" class="btn btn2">go to payment</a>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="info">
+        <div class="links1">
+          <a href="">FAQ</a>
+          <a href="">TERMS AND CONDITIONS</a>
+          <a href="">PRIVACY POLICY</a>
+      
+        </div>
+        <div class="links2">
+          <a href="">CONTACT US</a>
+          <a href>PHONE: +45 20 51 89 23</a>
+          <a href>E-MAIL: info@byustudio.com</a>
+          <div class="social-media">
+            <a href="">
+              <img
+                src="/img/insta.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="insta"
+            /></a>
+            <a href="">
+              <img
+                src="/img/facebook-3.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="facebook"
+            /></a>
+            <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="links3">
+          <a href="">SHIPPING AND RETURNS</a>
+          <a>DELIVERY OPTIONS</a>
+          <div class="cards">
+            <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon"/></a>
+            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="" /></a>
+        
+            
+          </div>
+     </div>
+    
+      <div class="links4">
+        <a href="">ABOUT US</a>
+        <a>GIFT CARDS</a>
+        <a>JOBS</a>
+        </div>
+    
+    </div>
+    
+    
+      <p class="copyright">
+        © Copyright - BYU Studio - Klareboderne 10, 1, DK-1115 København, CVR.
+        40912320
+      </p>
+    </footer>
     <script src="basket.js"></script>
   </body>
   

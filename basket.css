@@ -19,6 +19,60 @@ ul {
 a {
   text-decoration: none;
 }
+/*NAVIGATION*/
+.header-nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.header-nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffd148;
+  display: block;
+}
+
+.header-nav a:hover {
+  color: #f1f1f1;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-toggle {
+    background: transparent;
+    border: transparent;
+    height: 2vw;
+    width: 2vw;
+  }
+  .haburger-container {
+    height: 7vw;
+  }
+  .nav-toggle img {
+    width: 7vw;
+    height: 6vw;
+    margin-left: 2.7vw;
+  }
+  .nav-categories {
+    height: 0;
+    display: none;
+  }
+  .show-categories {
+    display: inline;
+    flex-direction: column;
+    height: 20rem;
+  }
+}
 body {
   background-color: #fefbf0;
 }
@@ -30,7 +84,7 @@ body {
   min-width: 30vw;
   min-height: 30vw;
 }
-.logo {
+.logonav {
   position: absolute;
   width: 8vw;
   height: 8vw;
@@ -119,6 +173,7 @@ h1 {
   color: #345042;
   font-size: 2.5vw;
   margin: 0.5vw;
+  cursor: pointer;
 }
 .minus {
   font-size: 3vw;
@@ -142,7 +197,7 @@ h1 {
 }
 .cards img {
   max-width: 4vw;
-  margin: -1vw;
+  margin: -0.5vw;
 }
 
 /* ----------------buttons------------------------ */
@@ -184,4 +239,78 @@ h1 {
 }
 .btn1 {
   margin-top: 12vw;
+}
+.clicks {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 6vw;
+  padding-right: 11vw;
+  top: 36vw;
+}
+.first,
+.second,
+.third {
+  width: 5vw;
+  height: 5vw;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+  .productcontainer {
+    width: 90vw;
+    margin: 5vw;
+  }
+  .totalcontainer {
+    margin: 5vw;
+    width: 90vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  .name,
+  .totalcontainer h2 {
+    font-size: 4vw;
+  }
+  .price,
+  .totalcontainer h3,
+  .infoproduct label,
+  .totalcontainer label {
+    font-size: 3vw;
+  }
+  .quantity {
+    max-width: 14vw;
+  }
+  .btn {
+    font-size: 3vw;
+    padding: 2px;
+  }
+  .btn2 {
+    max-width: 30vw;
+  }
+  .navcontainer {
+    min-height: 60vw;
+  }
+  .delivery {
+    font-size: 3vw;
+  }
+  .cards img {
+    min-width: 10vw;
+  }
+  .logo {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    left: 45%;
+    padding: 0.5vw;
+  }
+
+  .clicks {
+    top: 67vw;
+  }
 }

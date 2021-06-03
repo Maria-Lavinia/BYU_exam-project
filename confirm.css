@@ -1,0 +1,219 @@
+/* color palette
+yellow:#ffd148
+light pink: #fefbf0
+green: #345042
+dark pink: #f9e1bd
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #fefbf0;
+}
+.navcontainer {
+  background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
+  position: relative;
+  background-position: bottom;
+  background-size: cover;
+  min-width: 30vw;
+  min-height: 30vw;
+}
+.logo {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 45%;
+  padding: 0.5vw;
+}
+.step3 {
+  width: 100%;
+  padding: 5vw;
+}
+.clicks {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 6vw;
+  padding-right: 11vw;
+  top: 36vw;
+}
+.first,
+.second,
+.third {
+  width: 5vw;
+  height: 5vw;
+  background-color: transparent;
+  cursor: pointer;
+}
+h1 {
+  border-bottom: 3px solid #345042;
+  margin: 2vw;
+  font-family: alice;
+  color: #345042;
+  font-size: 3vw;
+  text-align: center;
+}
+h2 {
+  margin: 2vw;
+  font-family: open snas, sans-serif;
+  color: #345042;
+  font-size: 2vw;
+  text-align: center;
+}
+h3 {
+  margin: 2vw;
+  font-family: open snas, sans-serif;
+  color: #345042;
+  font-size: 2vw;
+}
+.btn {
+  background: transparent;
+  border: none;
+  margin: 5vw auto 0;
+  display: block;
+  font-size: 2vw;
+  position: relative;
+  transition: 0.3s;
+  padding: 10px;
+  text-align: center;
+  color: #ffd148;
+  text-transform: uppercase;
+  font-family: open sans, sans-serif;
+}
+
+.btn:before {
+  content: "";
+  border-top: 3px solid #ffd148;
+  /* padding: 0 10px; -----maybe for phone */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+}
+.btn:hover:before {
+  width: 100%;
+  padding: 0;
+}
+.btn:active {
+  background: black;
+  color: white;
+  transition: none;
+}
+button {
+  background: transparent;
+  border: transparent;
+  max-width: 30vw;
+  position: relative;
+  /* margin: 0 auto; */
+  margin-left: 40%;
+}
+
+.productcontainer {
+  display: flex;
+  background-color: #f9e1bd;
+  max-width: 100%;
+  margin: 2vw;
+}
+.deldetails,
+.deltime {
+  background-color: #f9e1bd;
+  max-width: 100%;
+  margin: 2vw;
+  font-family: open sans;
+  color: #345042;
+  padding: 1vw;
+}
+
+.productimg {
+  max-width: 30%;
+  padding: 3vw;
+  max-height: 100%;
+}
+.infoproduct {
+  padding-top: 3vw;
+}
+.name,
+.price,
+.infoproduct label,
+.totalcontainer h2,
+.totalcontainer h3,
+.totalcontainer label,
+.quantity {
+  font-family: open sans;
+  color: #345042;
+}
+.name,
+.totalcontainer h2 {
+  font-size: 2vw;
+}
+.totalcontainer h3,
+.price,
+.infoproduct label,
+.quantity {
+  font-size: 1.5vw;
+}
+.name,
+.price {
+  padding-bottom: 1vw;
+}
+.quantity {
+  margin-top: 1vw;
+}
+.totalcontainer label {
+  font-size: 1.3vw;
+}
+.totalcontainer {
+  background-color: #f9e1bd;
+  padding: 3vw;
+  margin: 2vw;
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    left: 45%;
+    padding: 0.5vw;
+  }
+
+  .clicks {
+    top: 67vw;
+  }
+  .navcontainer {
+    min-height: 60vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2,
+  h3,
+  .name,
+  .quantity {
+    font-size: 3vw;
+  }
+  .price {
+    font-size: 2vw;
+  }
+
+  .btn {
+    font-size: 3vw;
+    padding: 2px;
+    margin-left: -4vw;
+  }
+}
