@@ -1,5 +1,3 @@
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -39,7 +37,6 @@ navToggle.addEventListener("click", function () {
   categories.classList.toggle("show-categories");
 });
 
-
 /*newsletter*/
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -62,7 +59,19 @@ function handleSubmit(e) {
   e.preventDefault();
   const payload = {
     email: form.elements.email.value,
-    username: form.elements.username.value,
+    username: form.elements.name.value,
   };
   document.querySelector("input[type=submit]").disabled = true;
-};
+  console.log(payload);
+  fetch(`https://kea21s-5d8f.restdb.io/rest/newsletter`, {
+    method: "POST",
+    headers: {
+      "x-apikey": "606d5ed3f553500431007503",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  }).then((res) => res.json());
+  document.querySelector("input[type=submit]").disabled = false;
+  form.elements.email.value = "";
+  form.elements.name.value = "";
+}

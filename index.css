@@ -40,13 +40,16 @@ html {
 
 .box1 {
   position: absolute;
-  top: 2%;
-  left: 25%;
+  top: 3%;
+  left: 28%;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 45px;
   height: 10px;
 }
-
+.box1 img {
+  width: 50vw;
+  height: 50vw;
+}
 .box2 {
   position: absolute;
   top: 160%;
@@ -275,15 +278,16 @@ h1 {
   clear: both;
 }
 
-/* Six columns side by side */
-.column {
+/* 3 columns side by side */
+.column2 {
   float: left;
-  width: 16.66%;
+  flex: 20%;
+  padding: 5px;
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .active,
@@ -331,22 +335,6 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#newsletter h3 {
-  position: relative;
-  font-family: "Open Sans", sans-serif;
-  color: #345042;
-  text-align: right;
-  right: 19vw;
-  top: 78vw;
-  z-index: 1;
-  font-size: 2.2vw;
-}
-
-.hidden {
-  visibility: hidden;
-  display: none;
-}
-
 #theform {
   text-align: center;
 }
@@ -388,7 +376,15 @@ h1 {
   right: 3vw;
   top: 60vw;
 }
-
+.description {
+  position: absolute;
+  top: 140vw;
+  left: 30vw;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #345042;
+}
 /*footer*/
 
 footer {
@@ -451,7 +447,7 @@ footer img {
 @media screen and (max-width: 800px) {
   footer {
     position: absolute;
-    top: 640vw;
+    top: 750vw;
     width: 100%;
     margin-top: 0;
     background-color: #f9e1bd;
@@ -552,19 +548,20 @@ footer img {
 
   .newsletter {
     position: absolute;
-    top: 450vw;
   }
 
   #box {
+    position: absolute;
     height: 60vh;
     width: 90vw;
     margin-left: 5vw;
     margin-top: 2vw;
     background-color: #f9e1bd;
-    top: 200vw;
+    top: 420vw;
   }
   #newsletter-title h1 {
-    top: 7vw;
+    left: 9vw;
+    top: 340vw;
   }
 
   #newsletter-photo {
@@ -572,7 +569,7 @@ footer img {
     width: 25vw;
     z-index: 1;
     left: 14vw;
-    top: 80vw;
+    top: 410vw;
   }
 
   #theform {
@@ -595,14 +592,14 @@ footer img {
 
   #name-label,
   #name {
-    right: -40vw;
-    top: 50vw;
+    right: -50vw;
+    top: 380vw;
   }
 
   #email-label,
   #email {
-    right: -10vw;
-    top: 55vw;
+    right: -19.6vw;
+    top: 385vw;
   }
 
   #button {
@@ -613,8 +610,8 @@ footer img {
     padding: 7px 7px;
     position: relative;
     z-index: 1;
-    right: 1vw;
-    top: 70vw;
+    right: -6vw;
+    top: 400vw;
   }
 
   btn {
@@ -656,7 +653,7 @@ footer img {
     transition: none;
   }
   .btn1 {
-    margin-top: 1vw;
+    margin-top: 110vw;
     margin-left: 77vw;
     max-width: 20vw;
   }
@@ -666,5 +663,37 @@ footer img {
     font-size: 20px;
     color: #345042;
   }
+  .description {
+    position: absolute;
+    top: 495vw;
+    left: 25vw;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #345042;
+    z-index: 20;
+  }
 
+  .column2 {
+    float: left;
+    width: 16.66%;
+    visibility: hidden;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    margin-left: 24vw;
+  }
+  .title {
+    position: absolute;
+    top: 530vw;
+    z-index: 200;
+  }
+  .container {
+    position: absolute;
+    z-index: 600;
+    top: 575vw;
+  }
 }
