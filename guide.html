@@ -11,20 +11,25 @@
 <body>
     <header>
         <div id="section1">
-            <nav id="menu">
-                <ul>
-                    <a href="index.html"><li>HOME</li></a>
-                    <a href="about.html"><li>ABOUT</li></a>
-                    <a href="shop.html"><li>SHOP</li></a>
-                    <a href="guide.html"><li>GUIDE</li></a>
-                </ul>
-                <a href="index.html">
-                   <img id="logo" src="imgs/logos/Logo-White-PNGversion.png" alt="logo">
-                </a>
-                <a href="basket.html">
-                    <img id="basket" src="imgs/icons/basket-yellow.svg">
-                    </a>
-            </nav>
+            <div id="menu">
+                <div id="nav">
+                    <nav class="header-nav">
+                        <div class="hamburger-container">
+                            <button class="nav-toggle">
+                                <img src="imgs/icons/hamburger.png" alt="hamburger menu">
+                            </button>
+                        </div>
+                        <div class="nav-categories">
+                            <a class="menulink" href="index.html">HOME</a>
+                            <a class="menulink" href="shop.html">SHOP</a>
+                            <a class="menulink" href="about.html">ABOUT</a>
+                            <a class="menulink" href="guide.html">GUIDE</a>
+                        </div>
+                    </nav>
+                </div>
+                <a href="index.html"><img id="logo" src="imgs/logos/Logo-White-PNGversion.png" alt="byu logo"></a>
+                <a href="basket.html"><img id="basket" src="imgs/icons/basket-yellow.svg" alt="basket"></a>
+            </div>
             <h1>GUIDE</h1>
         <a href="#section2">
             <img id="arrow-down" src="imgs/icons/arrow-down.svg" alt="arrow down">
@@ -86,6 +91,64 @@
             <div id="after-img"></div>
         </div>
     </div>
+
+    <footer>
+        <div class="info">
+          <div class="links1">
+            <a href="">FAQ</a>
+            <a href="">TERMS AND CONDITIONS</a>
+            <a href="">PRIVACY POLICY</a>
+        
+          </div>
+          <div class="links2">
+            <a href="">CONTACT US</a>
+            <a href>PHONE: +45 20 51 89 23</a>
+            <a href>E-MAIL: info@byustudio.com</a>
+            <div class="social-media">
+              <a href="">
+                <img
+                  src="/imgs/icons/insta.png"
+                  loading="lazy"
+                  alt="instagram icon"
+                  class="insta"
+              /></a>
+              <a href="">
+                <img
+                  src="/imgs/icons/facebook-3.png"
+                  loading="lazy"
+                  alt="facebook icon"
+                  class="facebook"
+              /></a>
+              <a href=""> <img loading="lazy" src="/imgs/icons/iconfinder_shopify_3018711.png" alt="shopify icon" /></a>
+            </div>
+          </div>
+          <div class="logo"><img src="/imgs/logos/Logo-Black-PNGversion.png"></div>
+          <div class="links3">
+            <a href="">SHIPPING AND RETURNS</a>
+            <a>DELIVERY OPTIONS</a>
+            <div class="cards">
+              <a href=""><img loading="lazy" src="/imgs/icons/visa.png" alt="visa card icon"/></a>
+              <a href=""> <img loading="lazy" src="/imgs/icons/mastercard.png" alt="mastercard icon" /></a>
+              <a href=""> <img loading="lazy" src="/imgs/icons/paypal.png" alt="paypal icon" /></a>
+          
+              
+            </div>
+       </div>
+      
+        <div class="links4">
+          <a href="">ABOUT US</a>
+          <a>GIFT CARDS</a>
+          <a>JOBS</a>
+          </div>
+      
+      </div>
+      
+      
+        <p class="copyright">
+          © Copyright - BYU Studio - Klareboderne 10, 1, DK-1115 København, CVR.
+          40912320
+        </p>
+      </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
