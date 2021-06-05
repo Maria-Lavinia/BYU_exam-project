@@ -167,7 +167,7 @@ h1 {
   text-align: center;
   font-family: "Alice", serif;
   font-size: 45px;
-  color: #ffd148;
+  color: #f4ba2a;
   margin-top: 60px;
 }
 
@@ -197,7 +197,7 @@ h1 {
   transition: 0.3s;
   padding: 10px;
   text-align: center;
-  color: #ffd148;
+  color: #f4ba2a;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -625,7 +625,7 @@ footer img {
     transition: 0.3s;
     padding: 10px;
     text-align: center;
-    color: #ffd148;
+    color: #f4ba2a;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
@@ -633,7 +633,7 @@ footer img {
 
   .btn:before {
     content: "";
-    border-top: 3px solid #ffd148;
+    border-top: 3px solid #f4ba2a;
     /* padding: 0 10px; -----maybe for phone */
     position: absolute;
     top: 0;
