@@ -440,6 +440,7 @@ footer img {
 .copyright {
   margin-left: 28vw;
   color: #345042;
+  font-family: "Open Sans", sans-serif;
 }
 .logo {
   visibility: hidden;
