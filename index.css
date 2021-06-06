@@ -19,6 +19,10 @@ html {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-image {
   position: relative;
   background-attachment: fixed;
@@ -40,15 +44,15 @@ html {
 
 .box1 {
   position: absolute;
-  top: 3%;
+  top: 0%;
   left: 28%;
   transform: translate(-50%, -50%);
   width: 45px;
   height: 10px;
 }
 .box1 img {
-  width: 50vw;
-  height: 50vw;
+  width: 45vw;
+  height: 45vw;
 }
 .box2 {
   position: absolute;
@@ -187,6 +191,12 @@ h1 {
   padding: 5px;
 }
 
+.column img {
+  height: 60vh;
+  object-fit: cover;
+  object-position: 0% 90%;
+}
+
 .btn {
   background: transparent;
   border: none;
@@ -195,7 +205,7 @@ h1 {
   font-size: 2vw;
   position: relative;
   transition: 0.3s;
-  padding: 10px;
+  padding: 0;
   text-align: center;
   color: #f4ba2a;
   text-transform: uppercase;
@@ -241,10 +251,15 @@ h1 {
   display: none;
 }
 .mySlides img {
+<<<<<<< HEAD
   margin-top: 6vw;
+=======
+  margin-top: 0vw;
+>>>>>>> 1e18b185e22fd1ae5c3ed934795a12499c1189b2
   margin-left: 35vw;
-  height: 40vw;
+  height: 38vw;
   width: 30vw;
+  object-fit: cover;
 }
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -299,7 +314,11 @@ h1 {
 
 .newsletter {
   position: absolute;
+<<<<<<< HEAD
   top: 160vw;
+=======
+  top: 200vw;
+>>>>>>> 1e18b185e22fd1ae5c3ed934795a12499c1189b2
 }
 #box {
   height: 120vh;
@@ -316,7 +335,7 @@ h1 {
 
 #newsletter-title h1 {
   position: relative;
-  left: 1vw;
+  left: 2.5vw;
   top: 5vw;
   font-family: "Alice", serif;
   font-size: 13vw;
@@ -329,8 +348,8 @@ h1 {
   position: relative;
   width: 25vw;
   z-index: 1;
-  left: 18vw;
-  top: 72vw;
+  left: 15vw;
+  top: 67vw;
   border-radius: 4px;
   padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -356,14 +375,14 @@ h1 {
 
 #name-label,
 #name {
-  right: -35vw;
-  top: 45vw;
+  right: -36vw;
+  top: 40vw;
 }
 
 #email-label,
 #email {
   right: -6vw;
-  top: 50vw;
+  top: 45vw;
 }
 
 #button {
@@ -374,7 +393,7 @@ h1 {
   padding: 7px 7px;
   position: relative;
   z-index: 1;
-  right: 3vw;
+  right: 12vw;
   top: 60vw;
 }
 .description {
