@@ -33,12 +33,12 @@ body {
 
 /* Images used */
 .img1 {
-  background-image: url(/img/mainpic.jpg);
+  background-image: url(img/mainpic.jpg);
   min-height: 100%;
 }
 
 .img2 {
-  background-image: url(/img/joeyy-lee-BVQjyuTP1Ho-unsplash.jpg);
+  background-image: url(img/joeyy-lee-BVQjyuTP1Ho-unsplash.jpg);
   min-height: 100%;
 }
 
