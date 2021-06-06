@@ -44,8 +44,8 @@ body {
 
 .box1 {
   position: absolute;
-  top: 0%;
-  left: 28%;
+  top: 9%;
+  left: 29%;
   transform: translate(-50%, -50%);
   width: 45px;
   height: 10px;
@@ -216,7 +216,6 @@ h1 {
 .btn:before {
   content: "";
   border-top: 3px solid #ffd148;
-  /* padding: 0 10px; -----maybe for phone */
   position: absolute;
   top: 0;
   left: 0;
@@ -224,7 +223,7 @@ h1 {
   margin: 0 auto;
   width: 0;
   transition: 0.3s;
-  max-width: 12vw;
+  max-width: 10vw;
 }
 .btn:hover:before {
   width: 100%;
@@ -235,10 +234,12 @@ h1 {
   color: white;
   transition: none;
 }
+
 .btn1 {
   margin-top: 1vw;
-  margin-left: 77vw;
+  margin-left: 87vw;
   max-width: 20vw;
+  max-height: 20vw;
 }
 
 /* instagram slideshow*/
@@ -251,19 +252,11 @@ h1 {
   display: none;
 }
 .mySlides img {
-<<<<<<< HEAD
   margin-top: 6vw;
-=======
-  margin-top: 0vw;
->>>>>>> 1e18b185e22fd1ae5c3ed934795a12499c1189b2
   margin-left: 35vw;
   height: 38vw;
   width: 30vw;
   object-fit: cover;
-}
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -301,11 +294,6 @@ h1 {
   visibility: hidden;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 1;
-}
-
 .active,
 .demo:hover {
   opacity: 1;
@@ -314,11 +302,7 @@ h1 {
 
 .newsletter {
   position: absolute;
-<<<<<<< HEAD
   top: 160vw;
-=======
-  top: 200vw;
->>>>>>> 1e18b185e22fd1ae5c3ed934795a12499c1189b2
 }
 #box {
   height: 120vh;
@@ -349,7 +333,7 @@ h1 {
   width: 25vw;
   z-index: 1;
   left: 15vw;
-  top: 67vw;
+  top: 69vw;
   border-radius: 4px;
   padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -381,7 +365,7 @@ h1 {
 
 #email-label,
 #email {
-  right: -6vw;
+  right: -6.6vw;
   top: 45vw;
 }
 
@@ -468,7 +452,7 @@ footer img {
 @media screen and (max-width: 800px) {
   footer {
     position: absolute;
-    top: 750vw;
+    top: 840vw;
     width: 100%;
     margin-top: 0;
     background-color: #f9e1bd;
@@ -569,7 +553,7 @@ footer img {
 
   .newsletter {
     position: absolute;
-    top: 220vw;
+    top: 310vw;
   }
 
   #box {
@@ -654,8 +638,7 @@ footer img {
 
   .btn:before {
     content: "";
-    border-top: 3px solid #f4ba2a;
-    /* padding: 0 10px; -----maybe for phone */
+    border-top: 3px solid #ffd148;
     position: absolute;
     top: 0;
     left: 0;
@@ -675,7 +658,7 @@ footer img {
     transition: none;
   }
   .btn1 {
-    margin-top: 110vw;
+    margin-top: 205vw;
     margin-left: 77vw;
     max-width: 20vw;
   }
@@ -710,12 +693,12 @@ footer img {
   }
   .title {
     position: absolute;
-    top: 530vw;
-    z-index: 200;
+    top: 620vw;
+    z-index: 90;
   }
   .container {
     position: absolute;
     z-index: 600;
-    top: 575vw;
+    top: 660vw;
   }
 }
