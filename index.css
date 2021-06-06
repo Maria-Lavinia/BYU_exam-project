@@ -241,7 +241,7 @@ h1 {
   display: none;
 }
 .mySlides img {
-  margin-top: 2vw;
+  margin-top: 6vw;
   margin-left: 35vw;
   height: 40vw;
   width: 30vw;
@@ -283,6 +283,7 @@ h1 {
   float: left;
   flex: 20%;
   padding: 5px;
+  visibility: hidden;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -298,7 +299,7 @@ h1 {
 
 .newsletter {
   position: absolute;
-  top: 210vw;
+  top: 160vw;
 }
 #box {
   height: 120vh;
@@ -389,7 +390,7 @@ h1 {
 
 footer {
   position: absolute;
-  top: 370vw;
+  top: 320vw;
   width: 100%;
   margin-top: 0;
   background-color: #f9e1bd;
@@ -549,6 +550,7 @@ footer img {
 
   .newsletter {
     position: absolute;
+    top: 220vw;
   }
 
   #box {
