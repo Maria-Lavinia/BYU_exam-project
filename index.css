@@ -638,7 +638,7 @@ footer img {
 
   .btn:before {
     content: "";
-    border-top: 3px solid #ffd148;
+    border-top: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -653,7 +653,7 @@ footer img {
     padding: 0;
   }
   .btn:active {
-    background: black;
+    background: #345042;
     color: white;
     transition: none;
   }
