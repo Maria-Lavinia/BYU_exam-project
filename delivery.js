@@ -1,16 +1,8 @@
-//------------------------ quantity buttons------------------
-function inc() {
-  let number = document.querySelector('[name="number"]');
-  number.value = parseInt(number.value) + 1;
-  console.log(number);
+document.querySelector("#logonav").addEventListener("click", gohome);
+function gohome() {
+  window.location.href = "index.html";
 }
 
-function dec() {
-  let number = document.querySelector('[name="number"]');
-  if (parseInt(number.value) > 0) {
-    number.value = parseInt(number.value) - 1;
-  }
-}
 document.querySelector(".first").addEventListener("click", gobasket);
 function gobasket() {
   window.location.href = "basket.html";
