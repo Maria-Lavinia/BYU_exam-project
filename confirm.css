@@ -22,7 +22,8 @@ a {
 body {
   background-color: #fefbf0;
 }
-.navcontainer {
+/*-------------- navigation-------------------- */
+.nav-checkout {
   background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
   position: relative;
   background-position: bottom;
@@ -30,13 +31,203 @@ body {
   min-width: 30vw;
   min-height: 30vw;
 }
-.logo {
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--beige);
+}
+
+ul {
+  margin: 0;
+  padding-top: 1vw;
+  list-style: none;
+}
+
+nav li {
+  color: #ffd148;
+  font-family: "Alice", serif;
+  font-size: 20px;
+  border-top: none;
+  width: max-content;
+  line-height: 1em;
+  margin-bottom: 2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li:hover {
+  border-top: solid 1px #f4ba2a;
+  padding-top: 0;
+}
+
+#logonav {
+  width: 100px;
+  margin-top: 0vw;
+
   position: absolute;
-  width: 8vw;
-  height: 8vw;
+  width: 9vw;
+  height: 15vw;
   left: 45%;
   padding: 0.5vw;
 }
+
+#part1 h1 {
+  color: #ffd148;
+  font-family: "Alice", serif;
+  font-size: 13vw;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  border: transparent;
+}
+.box3 {
+  position: absolute;
+  top: 15%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  width: 5vw;
+  height: 5vw;
+}
+.header-nav {
+  height: 100%;
+  width: 160px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.header-nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffd148;
+  display: block;
+}
+
+.menulink {
+  background: transparent;
+  border: none;
+  display: block;
+  font-size: 2vw;
+  position: relative;
+  transition: 0.3s;
+  color: #ffd148;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 8vw;
+  margin-left: 1vw;
+}
+
+.menulink:before {
+  content: "";
+  border-top: 3px solid #ffd148;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+  max-width: 9vw;
+}
+.menulink:hover:before {
+  width: 100%;
+  padding: 0;
+}
+.menulink:active {
+  background: black;
+  color: white;
+  transition: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-checkout {
+    background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+    min-width: 60vw;
+    min-height: 60vw;
+  }
+
+  .logonav {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    left: 45%;
+    padding: 0.5vw;
+  }
+  #part1 h1 {
+    border: transparent;
+    top: 70%;
+  }
+
+  .box3 {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 8vw;
+    height: 8vw;
+  }
+  .nav-toggle {
+    background: transparent;
+    border: transparent;
+    height: 2vw;
+    width: 2vw;
+  }
+  .hamburger-container {
+    height: 7vw;
+    /* position: relative; */
+    /* margin-left: -15vw;
+    padding: 0; */
+  }
+  .header-nav {
+    max-height: 100%;
+    max-width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -10vw;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .nav-toggle img {
+    width: 7vw;
+    height: 6vw;
+    margin-left: 2.7vw;
+  }
+  .nav-categories {
+    height: 0;
+    display: none;
+  }
+  .show-categories {
+    display: inline;
+    height: 20rem;
+  }
+  .show-categories a {
+    font-size: 4vw;
+    margin-left: 13vw;
+  }
+  .menulink:before {
+    border-top: none;
+  }
+}
+/*=============== end of navigation------------- */
 .step3 {
   width: 100%;
   padding: 5vw;
@@ -215,5 +406,116 @@ button {
     font-size: 3vw;
     padding: 2px;
     margin-left: -4vw;
+  }
+}
+/*----------- footer --------- */
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  background-color: #f9e1bd;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+footer .info {
+  display: flex;
+  padding: 1vw;
+  margin-top: 0;
+  margin-left: 5vw;
+}
+footer .links1,
+footer .links2,
+footer .links3,
+footer .links4 {
+  padding: 1vw;
+  width: 34%;
+}
+footer a {
+  display: block;
+  font-size: 1.4vw;
+  font-family: "Opens Sans", sans-serif;
+  color: #345042;
+}
+
+.cardsf {
+  display: flex;
+  position: relative;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-left: 20vw;
+  margin-top: 3vw;
+}
+footer img {
+  width: 3vw;
+  padding: 0.2vw;
+}
+.copyright {
+  margin-left: 28vw;
+  color: #345042;
+  font-family: open sans;
+}
+.logo {
+  visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    background-color: #f9e1bd;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    margin-top: 0;
+    margin-left: 5vw;
+  }
+  .logo {
+    visibility: visible;
+    position: absolute;
+    top: 20vw;
+    left: 65vw;
+  }
+
+  .logo img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  footer a {
+    font-size: 2.6vw;
+    display: block;
+  }
+
+  footer img {
+    width: 4vw;
+    padding: 0.5vw;
+  }
+  .copyright {
+    margin-left: 15vw;
+    font-size: 2vw;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-left: 70vw;
+    margin-top: 19vw;
+  }
+
+  .cardsf {
+    display: flex;
+    position: relative;
   }
 }

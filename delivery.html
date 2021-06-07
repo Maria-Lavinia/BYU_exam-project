@@ -14,11 +14,29 @@
   </head>
   <body>
     <header>
-      <div class="navcontainer">
-        <img src="img/Logo-White (1).svg" alt="logo" class="logo" />
-      </div>
+      <section id="part1">
+      <div class="nav-checkout">
+        <nav class="header-nav">
+
+            <div class="hamburger-container">
+              <button class="nav-toggle">
+                <img src="img/hamburger.png" alt="hamburger menu" loading="lazy">
+              </button>
+            </div>
+            <div class="nav-categories">
+              <a class="menulink" href="index.html">HOME</a>
+              <a class="menulink" href="shop.html">SHOP</a>
+              <a  class="menulink" href="about.html">ABOUT</a>
+              <a class="menulink" href="guide.html">GUIDE</a>
+            </div>
+              
+              </nav>
+              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy"/>
+              <div class="box3"><a href="basket.html"><img src="img/basket-yellow.svg" alt="basket" loading="lazy"></a></div>
+    </div>
+  </section>
       <div class="steps">
-        <img src="img/step2.png" alt="line with steps" class="step2" />
+        <img src="img/step2.png" alt="line with steps" class="step2" loading="lazy" />
         <div class="clicks">
         <div class="first">
         </div>
@@ -89,7 +107,7 @@
               required
             />
             <button >
-              <a href="#payment" class="btn btn1">Payment options</a>
+              <a href="#" class="btn btn1">Payment options</a>
             </button>
           </form>
         </div>
@@ -98,9 +116,9 @@
           <form class="paymentdata" id="payment">
             <h3>We accept:</h3>
             <div class="cards">
-              <img src="img/mastercard1.png" alt="mastercard icon" />
-              <img src="img/visa1.png" alt="visa icon" />
-              <img src="img/paypal1.png" alt="paypal icon" />
+              <img src="img/mastercard1.png" alt="mastercard icon" loading="lazy" />
+              <img src="img/visa1.png" alt="visa icon" loading="lazy" />
+              <img src="img/paypal1.png" alt="paypal icon" loading="lazy"/>
             </div>
             <label for="cardnr">Card number:</label>
             <input
@@ -149,31 +167,92 @@
             src="img/DIYJewelryKit_530x@2x.jpg"
             alt="picture with the kit"
             class="productimg"
+            loading="lazy"
           />
           <div class="infoproduct">
             <h2 class="name">Product name</h2>
-            <p class="price">Price: <span>123,45kr</span></p>
+            <p class="price">Price: <span>DKK300</span></p>
             <p class="quantity">Quantity: <span>1</span></p>
           </div>
 
         </div>
         <div class="totalcontainer">
             
-            <h3 class="subtotalprice">Subtotal: <span>$$$</span></h2>
-              <h3 class="deliveryprice">Delivery: <span>$$$</span></h3>
-              <h2 class="totalprice">Total: <span>$$$</span></h2>
+            <h3 class="subtotalprice">Subtotal: <span>300DKK</span></h2>
+              <h3 class="deliveryprice">Delivery: <span>35DKK</span></h3>
+              <h2 class="totalprice">Total: <span>335DKK</span></h2>
               
               <input type="checkbox" id="terms" name="terms" value="terms" required>
               <label  id="termscond" for="terms">You agree with the Terms & Conditions</label>
               <button type="submit" class="submit">
-                <a href="#" class="btn">Confirm order</a>
+                <a href="confirm.html" class="btn">Confirm order</a>
               </button>
               
       </div>
     
       </div>
-<footer></footer>
-<script src="delivery.js"></script>
+
+
     </main>
+    <footer>
+      <div class="info">
+        <div class="links1">
+          <a href="">FAQ</a>
+          <a href="">TERMS AND CONDITIONS</a>
+          <a href="">PRIVACY POLICY</a>
+      
+        </div>
+        <div class="links2">
+          <a href="">CONTACT US</a>
+          <a href>PHONE: +45 20 51 89 23</a>
+          <a href>E-MAIL: info@byustudio.com</a>
+          <div class="social-media">
+            <a href="">
+              <img
+                src="/img/insta.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="insta"
+                loading="lazy"
+            /></a>
+            <a href="">
+              <img
+                src="/img/facebook-3.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="facebook"
+                loading="lazy"
+            /></a>
+            <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" loading="lazy" /></a>
+          </div>
+        </div>
+        <div class="logo"><img src="/img/Logo-Black.svg" class="logo BYU" loading="lazy"></div>
+        <div class="links3">
+          <a href="">SHIPPING AND RETURNS</a>
+          <a>DELIVERY OPTIONS</a>
+          <div class="cardsf">
+            <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon" loading="lazy"/></a>
+            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon" loading="lazy" /></a>
+            <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon"  loading="lazy"/></a>
+        
+            
+          </div>
+     </div>
+    
+      <div class="links4">
+        <a href="">ABOUT US</a>
+        <a>GIFT CARDS</a>
+        <a>JOBS</a>
+        </div>
+    
+    </div>
+    
+    
+      <p class="copyright">
+        © Copyright - BYU Studio - Klareboderne 10, 1, DK-1115 København, CVR.
+        40912320
+      </p>
+    </footer>
+    <script src="delivery.js"></script>
   </body>
 </html>

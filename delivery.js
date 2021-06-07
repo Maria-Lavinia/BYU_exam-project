@@ -1,3 +1,8 @@
+document.querySelector("#logonav").addEventListener("click", gohome);
+function gohome() {
+  window.location.href = "index.html";
+}
+
 document.querySelector(".first").addEventListener("click", gobasket);
 function gobasket() {
   window.location.href = "basket.html";

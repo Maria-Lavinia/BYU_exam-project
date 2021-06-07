@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="basket.css" />
+    <link rel="stylesheet" href="shop.css">
     <title>Basket</title>
   </head>
   <body>
     <header>
-   
-      <div class="navcontainer">
+      <div class="nav-checkout">
         <nav class="header-nav">
 
-          <div class="hamburger-container">
-            <button class="nav-toggle">
-              <img src="img/hamburger.png" alt="hamburger menu">
-            </button>
-          </div>
-          <div class="nav-categories">
-            <a class="menulink" href="#">HOME</a>
-            <a class="menulink" href="#">SHOP</a>
-            <a  class="menulink" href="#">ABOUT</a>
-            <a class="menulink" href="#">GUIDE</a>
-          </div>
-            
-            </nav>
-        <img src="img/Logo-White (1).svg" alt="logo" class="logo" />
-      </div>
+            <div class="hamburger-container">
+              <button class="nav-toggle">
+                <img src="img/hamburger.png" alt="hamburger menu" loading="lazy">
+              </button>
+            </div>
+            <div class="nav-categories">
+              <a class="menulink" href="index.html">HOME</a>
+              <a class="menulink" href="shop.html">SHOP</a>
+              <a  class="menulink" href="about.html">ABOUT</a>
+              <a class="menulink" href="guide.html">GUIDE</a>
+            </div>
+              
+              </nav>
+              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy"/>
+              <div class="box3"><img src="img/basket-yellow.svg" alt="basket"loading="lazy"></div>
+    </div>
+    
+      
       <div class="steps">
-        <img src="img/STEP1_1.png" alt="line with steps" class="step1" />
+        <img src="img/STEP1_1.png" alt="line with steps" class="step1" loading="lazy" />
         <div class="clicks">
           <div class="first">
           </div>
@@ -38,52 +41,14 @@
           <div class="third"></div>
       </div>
       </div>
-    </header>
-    <main>
+    
       <h1>My items</h1>
-      <div class="content">
-        <!---------------- make this one a template  ------------------>
-        <div class="productcontainer">
-          <img
-            src="img/DIYJewelryKit_530x@2x.jpg"
-            alt="picture with the kit"
-            class="productimg"
-          />
-          <div class="infoproduct">
-            <h2 class="name">Product name</h2>
-            <p class="price">Price: <span>123,45kr</span></p>
-            <label for="quantity" class="labelq">Quantity:</label>
-            <div class="quantity" id="quantity">
-              <button onclick="dec()" class="minus">-</button>
-              <input type="text" name="number" readonly value="0" class="numberq">
-              <button onclick="inc()" class="plus">+</button>
-            </div>
-            <a href="" class="btn btn1">Delete item</a>
-          </div>
+      
+      <div id="empty-cart">
+          <p class="cartempty">your cart is empty</p>
+          <a href="shop.html" class="btn empty-btn">go back to the shop</a>
         </div>
-        <div class="totalcontainer">
-          <h2 class="totalprice">Total: <span>$$$</span></h2>
-          <h3 class="subtotalprice">Subtotal: <span>$$$</span></h2>
-            <h3 class="deliveryprice">Delivery: <span>$$$</span></h3>
-           <label for="delivery">Choose delivery type:</label>
-            <form id="delivery">
-              <select name="delivery" class="delivery" >
-                <option >Standard pick-up point - 35kr</option>
-                <option >Standard home delivery - 35kr</option>
-                <option >Next day delivery - 110kr</option>
-                <option >Nominated day delivery- 200kr</option>
-              </select>
-            </form>
-<h3>We accept:</h3>
-<div class="cards">
-  <img src="img/mastercard1.png" alt="mastercard icon">
-  <img src="img/visa1.png" alt="visa icon" >
-  <img src="img/paypal1.png" alt="paypal icon">
-</div>
-<a href="" class="btn btn2">go to payment</a>
-        </div>
-      </div>
-    </main>
+   
     <footer>
       <div class="info">
         <div class="links1">
@@ -103,6 +68,7 @@
                 loading="lazy"
                 alt="instagram icon"
                 class="insta"
+                loading="lazy"
             /></a>
             <a href="">
               <img
@@ -110,16 +76,18 @@
                 loading="lazy"
                 alt="instagram icon"
                 class="facebook"
+                loading="lazy"
             /></a>
-            <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="" /></a>
+            <a href="#"> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" /></a>
           </div>
         </div>
         <div class="links3">
           <a href="">SHIPPING AND RETURNS</a>
           <a>DELIVERY OPTIONS</a>
-          <div class="cards">
+          <div class="cardsf">
             <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon"/></a>
-            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="" /></a>
+            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon" /></a>
+            <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon" /></a>
         
             
           </div>
@@ -140,6 +108,7 @@
       </p>
     </footer>
     <script src="basket.js"></script>
+    <script src="confirm.js"></script>
   </body>
   
 
