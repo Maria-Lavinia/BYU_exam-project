@@ -27,7 +27,7 @@ main {
   justify-content: space-between;
 }
 .navcontainer {
-  background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
+  background-image: url("img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
   position: relative;
   background-position: bottom;
   background-size: cover;
