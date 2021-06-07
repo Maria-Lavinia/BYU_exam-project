@@ -427,7 +427,7 @@ footer img {
 }
 /*------------- nav ------------- */
 .nav-checkout {
-  background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
+  background-image: url("img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
   position: relative;
   background-position: bottom;
   background-size: cover;
@@ -545,7 +545,7 @@ nav li:hover {
 }
 @media screen and (max-width: 800px) {
   .nav-checkout {
-    background-image: url("/img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
+    background-image: url("img/marcelo-rangel-CIDbwg8jsTM-unsplash.jpg");
     position: relative;
     background-position: bottom;
     background-size: cover;
