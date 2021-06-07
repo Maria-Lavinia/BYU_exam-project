@@ -1,0 +1,230 @@
+:root {
+  --beige: #fefbf0;
+  --lightpink: #f9e1bd;
+  --lightyellow: #ffd148;
+  --darkyellow: #f4ba2a;
+  --darkgreen: #345042;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-right: 0;
+  background-color: #fefbf0;
+  padding: 0;
+}
+
+/* image background and title */
+
+.img-box {
+  background-position: 0 90%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bgimg {
+  background-image: url(images/background-image.jpg);
+  min-height: 100%;
+}
+
+.basket-box {
+  position: absolute;
+  top: 2%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 10px;
+}
+
+h1 {
+  font-family: "Alice", serif;
+  font-size: 120px;
+  text-align: center;
+  color: var(--lightyellow);
+  padding-top: 10%;
+}
+
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  top: 3%;
+}
+img.img-logo {
+  width: 100px;
+}
+
+#arrow-down {
+  width: 100px;
+  position: absolute;
+  left: 47%;
+  top: 85%;
+}
+
+#arrow-down:hover {
+  transform: translateY(1em);
+}
+
+/* SHOW YOUR ART - CUSTOMER EXPERIENCES */
+.box1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.review-form {
+  display: flex;
+  padding-top: 2em;
+  border-top: 1px grey solid;
+  color: var(--darkgreen);
+}
+
+.review-content {
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  padding-bottom: 0.5em;
+  margin-left: 0vw;
+}
+
+.username {
+  font-family: "Alice", serif;
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.review-form p {
+  font-family: Open sans, sans-serif;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.image-wrapper {
+  max-width: 30vw;
+  height: 30vw;
+}
+
+.review-img {
+  width: 80%;
+  object-fit: contain;
+}
+
+/* LEAVE REVIEW */
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  column-gap: 2em;
+  row-gap: 0;
+  color: var(--darkgreen);
+}
+
+.create_comment {
+  font-family: "Alice", serif;
+  font-size: 2.4em;
+  border-bottom: 1px grey solid;
+}
+
+#commentForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9em;
+  max-width: 48em;
+}
+
+#comment_content {
+  height: 17em;
+}
+
+#submit-work {
+  color: var(--darkyellow);
+  background: none;
+  border: none;
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  align-self: center;
+}
+
+#submit-work:hover {
+  border-top: 3px solid #ffd148;
+  transition: 0.3s;
+}
+
+.hidden-msg {
+  display: none;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  .basket-box {
+    left: 93%;
+  }
+
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .image-wrapper {
+    max-width: 400px;
+    height: initial;
+    text-align: center;
+  }
+
+  .review-img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    border-top: 1px grey solid;
+    color: var(--darkgreen);
+  }
+
+  #arrow-down {
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 85%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    padding-top: 25%;
+    font-size: 3em;
+  }
+}
