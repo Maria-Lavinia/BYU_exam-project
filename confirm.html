@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="stylesheet" href="basket.css" />
-    <link rel="stylesheet" href="shop.css">
-    <title>Basket</title>
+    <link rel="stylesheet" href="confirm.css" />
+    <title>Confirmation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <section id="part1">
     <header>
       <div class="nav-checkout">
         <nav class="header-nav">
@@ -27,28 +31,54 @@
             </div>
               
               </nav>
-              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy"/>
-              <div class="box3"><img src="img/basket-yellow.svg" alt="basket"loading="lazy"></div>
+              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy" />
+              <div class="box3"><a href="basket.html"><img src="img/basket-yellow.svg" alt="basket"></a></div>
     </div>
-    
-      
+    </section>
       <div class="steps">
-        <img src="img/STEP1_1.png" alt="line with steps" class="step1" loading="lazy" />
+        <img src="img/step3.png" alt="line with steps" class="step3" loading="lazy" />
         <div class="clicks">
-          <div class="first">
-          </div>
+          <div class="first"></div>
           <div class="second"></div>
           <div class="third"></div>
-      </div>
-      </div>
-    
-      <h1>My items</h1>
-      
-      <div id="empty-cart">
-          <p class="cartempty">your cart is empty</p>
-          <a href="shop.html" class="btn empty-btn">go back to the shop</a>
         </div>
-   
+      </div>
+    </header>
+
+    <main>
+      <h1>Thank you for your purchase!</h1>
+      <h2>An order confirmation has been sent to your e-mail.</h2>
+      <button>
+        <a href="shop.html" class="btn">Back to shopping</a>
+      </button>
+      <h3>Items shipped</h3>
+      <!------------------------ make this a template  --------------->
+      <div class="productcontainer">
+        <img
+          src="img/DIYJewelryKit_530x@2x.jpg"
+          alt="picture with the kit"
+          class="productimg"
+          loading="lazy"
+        />
+        <div class="infoproduct">
+          <h2 class="name">Kit number 1</h2>
+          <p class="price">Price: <span>335DKK</span></p>
+          <p class="quantity">Quantity: <span>1</span></p>
+        </div>
+      </div>
+      <h3>Delivery details</h3>
+      <div class="deldetails">
+        <p>Delivery adress:</p>
+        <p>Name:</p>
+        <p>Country:</p>
+        <p>City:</p>
+        <p>Street:</p>
+      </div>
+      <h3>Estimated time of delivery</h3>
+      <div class="deltime">
+        <p>Expected delivery at Pick up point 2021-20-04</p>
+      </div>
+    </main>
     <footer>
       <div class="info">
         <div class="links1">
@@ -78,16 +108,17 @@
                 class="facebook"
                 loading="lazy"
             /></a>
-            <a href="#"> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" /></a>
+            <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" loading="lazy"/></a>
           </div>
         </div>
+        <div class="logo"><img src="/img/Logo-Black.svg" alt="logo of BYU" loading="lazy"></div>
         <div class="links3">
           <a href="">SHIPPING AND RETURNS</a>
           <a>DELIVERY OPTIONS</a>
           <div class="cardsf">
-            <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon"/></a>
-            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon" /></a>
-            <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon" /></a>
+            <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon" loading="lazy"/></a>
+            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon"  loading="lazy"/></a>
+            <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon"loading="lazy" /></a>
         
             
           </div>
@@ -107,9 +138,6 @@
         40912320
       </p>
     </footer>
-    <script src="basket.js"></script>
     <script src="confirm.js"></script>
   </body>
-  
-
 </html>

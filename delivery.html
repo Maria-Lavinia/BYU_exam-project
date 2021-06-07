@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="delivery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Delivery</title>
+  </head>
+  <body>
+    <header>
+      <section id="part1">
+      <div class="nav-checkout">
+        <nav class="header-nav">
+
+            <div class="hamburger-container">
+              <button class="nav-toggle">
+                <img src="img/hamburger.png" alt="hamburger menu" loading="lazy">
+              </button>
+            </div>
+            <div class="nav-categories">
+              <a class="menulink" href="index.html">HOME</a>
+              <a class="menulink" href="shop.html">SHOP</a>
+              <a  class="menulink" href="about.html">ABOUT</a>
+              <a class="menulink" href="guide.html">GUIDE</a>
+            </div>
+              
+              </nav>
+              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy"/>
+              <div class="box3"><a href="basket.html"><img src="img/basket-yellow.svg" alt="basket" loading="lazy"></a></div>
+    </div>
+  </section>
+      <div class="steps">
+        <img src="img/step2.png" alt="line with steps" class="step2" loading="lazy" />
+        <div class="clicks">
+        <div class="first">
+        </div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+      </div>
+    </header>
+    <main>
+      <div class="forms">
+        <div class="firstform">
+          <h1>Billing information</h1>
+          <form class="customerdata">
+            <label for="name"> <i class="fas fa-user"></i>Full name:</label>
+            <input
+              class="fill-in"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              required
+            />
+            <label for="email"> <i class="fas fa-envelope"></i>E-mail:</label>
+            <input
+              class="fill-in"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+            <label for="country"> <i class="fas fa-flag"></i>Country:</label>
+            <input
+              class="fill-in"
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Name of country"
+              required
+            />
+            <label for="city"> <i class="fas fa-city"></i>City:</label>
+            <input
+              class="fill-in"
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Name of city"
+              required
+            />
+            <label for="address"> <i class="fas fa-road"></i>Address:</label>
+            <input
+              class="fill-in"
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Name of the street and number"
+              required
+            />
+            <label for="postcode">
+              <i class="fas fa-address-card"></i>Postal code:</label
+            >
+            <input
+              class="fill-in"
+              type="tel"
+              id="postcode"
+              name="postcode"
+              placeholder="Postal code number"
+              required
+            />
+            <button >
+              <a href="#" class="btn btn1">Payment options</a>
+            </button>
+          </form>
+        </div>
+        <div class="secondform">
+          <h1>Payment options</h1>
+          <form class="paymentdata" id="payment">
+            <h3>We accept:</h3>
+            <div class="cards">
+              <img src="img/mastercard1.png" alt="mastercard icon" loading="lazy" />
+              <img src="img/visa1.png" alt="visa icon" loading="lazy" />
+              <img src="img/paypal1.png" alt="paypal icon" loading="lazy"/>
+            </div>
+            <label for="cardnr">Card number:</label>
+            <input
+              class="fill-in"
+              type="tel"
+              id="cardnr"
+              name="cardnr"
+              placeholder="1111-2222-3333-4444"
+              required
+            />
+            <label for="cvv">CVV:</label>
+            <input
+              class="fill-in"
+              type="tel"
+              id="cvv"
+              name="cvv"
+              placeholder="123"
+              required
+            />
+            <label for="cardname">Name on the card:</label>
+            <input
+              class="fill-in"
+              type="text"
+              id="cardname"
+              name="cardname"
+              placeholder="Name on the card"
+              required
+            />
+            <label for="date">
+              <span>Expiration date:</span>
+              <strong><abbr title="required">-</abbr></strong>
+              <em>formatted as dd/mm/yyyy</em>
+            </label>
+            <input type="date" id="date" name="expiration" />
+            <button>
+              <a href="#finaltotal" class="btn btn2">Check and confirm</a>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="finaltotal" id="finaltotal">
+        <h1>Items</h1>
+        <!----------------------------- make this a template  ---------------->
+        <div class="productcontainer">
+          <img
+            src="img/DIYJewelryKit_530x@2x.jpg"
+            alt="picture with the kit"
+            class="productimg"
+            loading="lazy"
+          />
+          <div class="infoproduct">
+            <h2 class="name">Product name</h2>
+            <p class="price">Price: <span>DKK300</span></p>
+            <p class="quantity">Quantity: <span>1</span></p>
+          </div>
+
+        </div>
+        <div class="totalcontainer">
+            
+            <h3 class="subtotalprice">Subtotal: <span>300DKK</span></h2>
+              <h3 class="deliveryprice">Delivery: <span>35DKK</span></h3>
+              <h2 class="totalprice">Total: <span>335DKK</span></h2>
+              
+              <input type="checkbox" id="terms" name="terms" value="terms" required>
+              <label  id="termscond" for="terms">You agree with the Terms & Conditions</label>
+              <button type="submit" class="submit">
+                <a href="confirm.html" class="btn">Confirm order</a>
+              </button>
+              
+      </div>
+    
+      </div>
+
+
+    </main>
+    <footer>
+      <div class="info">
+        <div class="links1">
+          <a href="">FAQ</a>
+          <a href="">TERMS AND CONDITIONS</a>
+          <a href="">PRIVACY POLICY</a>
+      
+        </div>
+        <div class="links2">
+          <a href="">CONTACT US</a>
+          <a href>PHONE: +45 20 51 89 23</a>
+          <a href>E-MAIL: info@byustudio.com</a>
+          <div class="social-media">
+            <a href="">
+              <img
+                src="/img/insta.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="insta"
+                loading="lazy"
+            /></a>
+            <a href="">
+              <img
+                src="/img/facebook-3.png"
+                loading="lazy"
+                alt="instagram icon"
+                class="facebook"
+                loading="lazy"
+            /></a>
+            <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" loading="lazy" /></a>
+          </div>
+        </div>
+        <div class="logo"><img src="/img/Logo-Black.svg" class="logo BYU" loading="lazy"></div>
+        <div class="links3">
+          <a href="">SHIPPING AND RETURNS</a>
+          <a>DELIVERY OPTIONS</a>
+          <div class="cardsf">
+            <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon" loading="lazy"/></a>
+            <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon" loading="lazy" /></a>
+            <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon"  loading="lazy"/></a>
+        
+            
+          </div>
+     </div>
+    
+      <div class="links4">
+        <a href="">ABOUT US</a>
+        <a>GIFT CARDS</a>
+        <a>JOBS</a>
+        </div>
+    
+    </div>
+    
+    
+      <p class="copyright">
+        © Copyright - BYU Studio - Klareboderne 10, 1, DK-1115 København, CVR.
+        40912320
+      </p>
+    </footer>
+    <script src="delivery.js"></script>
+  </body>
+</html>

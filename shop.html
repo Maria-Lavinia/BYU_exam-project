@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="basket.css">
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Make your own jewellery with BYU Studio.">
+</head>
+<body>
+    <!------------------------------ shop page  ----------------->
+<div id="shoppage">
+<section id="part1">
+    <nav class="header-nav">
+
+        <div class="hamburger-container">
+          <button class="nav-toggle">
+            <img src="img/hamburger.png" alt="hamburger menu" loading="lazy">
+          </button>
+        </div>
+        <div class="nav-categories">
+          <a class="menulink" href="index.html">HOME</a>
+          <a class="menulink" href="shop.html">SHOP</a>
+          <a  class="menulink" href="about.html">ABOUT</a>
+          <a class="menulink" href="guide.html">GUIDE</a>
+        </div>
+        
+          </nav>
+          <div class="box3" ><a href="#" id="basket-icon"><img src="img/basket-yellow.svg" alt="basket" loading="lazy"></a></div>
+          <img src="img/Logo-White (1).svg" alt="logo" class="logonav1" loading="lazy"/>
+        <h1>SHOP</h1>
+        <a href="#part2">
+            <img id="arrow-down" src="img/arrow-down.svg" alt="arrow down" loading="lazy">
+        </a>
+    </section>
+
+
+<section id="part2">
+    <div id="products">
+      
+          
+        <div class="card-item" id="0">
+            <img class="product-photo" src="img/DIYJewelryKit_530x@2x.jpg" alt="diy jewelry kit" loading="lazy">
+            <div class="product-text">
+               
+                    <h3>Kit number 1</h3>
+                    <h4 class="priceProduct">200DKK</h4>
+                
+            </div>
+            <button  class="btn-add" id="add-to-cart" onclick="">
+                <a href="#" class="btn">Add to cart</a>
+              </button>
+              <button  class="btn-add" id="read-more" onclick="">
+                <a href="#" class="btn readmore">Read more</a>
+              </button>
+        </div>
+       
+        <div class="card-item" id="1">
+          <img class="product-photo" src="img/adult-kit2-866x1024-2.jpg" alt="diy jewelry kit" loading="lazy">
+          <div class="product-text">
+             
+                  <h3>Kit number 2</h3>
+                  <h4 class="priceProduct">300DKK</h4>
+              
+          </div>
+          <button  class="btn-add" id="add-to-cart" onclick="">
+              <a href="#" class="btn">Add to cart</a>
+            </button>
+            <button  class="btn-add" id="read-more" onclick="">
+              <a href="#" class="btn readmore">Read more</a>
+            </button>
+      </div>
+      <div class="card-item" id="2">
+        <img class="product-photo" src="img/DIYJewelryKit_530x@2x.jpg" alt="diy jewelry kit" loading="lazy">
+        <div class="product-text">
+            
+                <h3>Kit number 3</h3>
+                <h4 class="priceProduct">670DKK</h4>
+           
+        </div>
+        <button  class="btn-add" id="add-to-cart" onclick="">
+            <a href="#" class="btn">Add to cart</a>
+          </button>
+          <button  class="btn-add" id="read-more" onclick="">
+            <a href="#" class="btn readmore">Read more</a>
+          </button>
+    </div>
+    <div class="card-item" id="3">
+      <img class="product-photo" src="img/adult-kit2-866x1024-2.jpg" alt="diy jewelry kit" loading="lazy">
+      <div class="product-text">
+       
+              <h3>Kit number 4</h3>
+              <h4 class="priceProduct">560DKK</h4>
+          
+      </div>
+      <button  class="btn-add" id="add-to-cart" onclick="">
+          <a href="#" class="btn">Add to cart</a>
+      </button>
+      <button  class="btn-add read-more" id="read-more" onclick="">
+          <a href="#" class="btn readmore" >Read more</a>
+      </button>
+  </div>
+  <div class="card-item" id="4">
+    <img class="product-photo" src="img/DIYJewelryKit_530x@2x.jpg" alt="diy jewelry kit" loading="lazy">
+    <div class="product-text">
+      
+            <h3>Kit number 5</h3>
+            <h4 class="priceProduct">300DKK</h4>
+       
+    </div>
+    <button  class="btn-add" id="add-to-cart" onclick="">
+        <a href="#" class="btn">Add to cart</a>
+      </button>
+      <button  class="btn-add" id="read-more" onclick="">
+        <a href="#" class="btn readmore">Read more</a>
+      </button>
+</div>
+
+    </div>
+    <div id="link-to-guide">
+      <p>Not sure which kit to choose?</p><button type="submit" class="btn-add" >
+        <a href="guide.html" class="btn">see our guide</a>
+      </button></div>
+    </section>
+</div>
+<div id="confirm">
+  <div class="message">Your item has been added to the cart</div><br>
+  <button id="yes" class="btn">OK</button>
+</div>
+<div id="readythere">
+  <div class="messager">Your item is already in the cart</div><br>
+  <button id="already" class="btn">OK</button>
+</div>
+<!----------------------- details section -------------- -->
+<div id="details-page">
+  <div class="details">
+      <div class="items-detail">
+          <!-- <div class="image-container">
+              <img src="img/DIYJewelryKit_530x@2x.jpg" alt="" id="details-img">
+          </div> -->
+          <div class="details-card">
+              <h2 id="detail-title">The kit</h2>
+              <h4 id="detail-price">Price : DKK350</h4>
+              <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+              <p id="spec"><strong>Components :</strong>
+
+                  <ul>
+                      <li>Scissors</li>
+
+                      <li>Wax </li>
+
+                      <li>Beads </li>
+                      <li>Acrilic painting</li>
+                      <li>String</li>
+                      <li>Stamps</li>
+
+                  </ul>
+              </p>
+              <button id="carts" class="btn">Add to Cart</button>
+              <button id="buy" class="btn">Back</button>
+          </div>
+      </div>
+  </div>
+</div>
+ <!--------------------------- basket page ------------- -->
+<div id="basket">
+    
+    <div class="nav-checkout">
+        <nav class="header-nav">
+
+            <div class="hamburger-container">
+              <button class="nav-toggle">
+                <img src="img/hamburger.png" alt="hamburger menu" loading="lazy">
+              </button>
+            </div>
+            <div class="nav-categories">
+              <a class="menulink" href="index.html">HOME</a>
+              <a class="menulink" href="shop.html">SHOP</a>
+              <a  class="menulink" href="about.html">ABOUT</a>
+              <a class="menulink" href="guide.html">GUIDE</a>
+            </div>
+              
+              </nav>
+              <img src="img/Logo-White (1).svg" alt="logo" class="logonav" id="logonav" loading="lazy"/>
+              <div class="box3"><img src="img/basket-yellow.svg" alt="basket" loading="lazy"></div>
+    </div>
+    
+      
+      <div class="steps">
+        <img src="img/STEP1_1.png" alt="line with steps" class="step1" loading="lazy" />
+        <div class="clicks">
+          <div class="first">
+          </div>
+          <div class="second"></div>
+          <div class="third"></div>
+      </div>
+      </div>
+    
+      <h1>My items</h1>
+      
+      <div id="empty-cart">
+          <p class="cartempty">your cart is empty</p>
+          <a href="shop.html" class="btn empty-btn">go back to the shop</a>
+        </div>
+      
+
+      <div class="content" id="cart-with-items">
+        
+        <div id="productcontainer">
+          
+           <div id="info-product">
+          </div>
+         
+        </div>
+        <div class="totalcontainer" id="totalcontainer">
+          <h2 class="totalprice"></h2>
+          <!-- <h3 class="subtotalprice">Subtotal: <span>$$$</span></h2> -->
+            <h3 class="deliveryprice"></h3>
+            <label for="delivery">Choose delivery type:</label>
+            <form id="delivery">
+              <select name="delivery" class="delivery" >
+                <option >Standard pick-up point - 35kr</option>
+                <option >Standard home delivery - 35kr</option>
+                <option >Next day delivery - 110kr</option>
+                <option >Nominated day delivery- 200kr</option>
+              </select>
+            </form>
+<h3>We accept:</h3>
+<div class="cards">
+  <img src="img/mastercard1.png" alt="mastercard icon" loading="lazy">
+  <img src="img/visa1.png" alt="visa icon" loading="lazy" >
+  <img src="img/paypal1.png" alt="paypal icon" loading="lazy">
+</div>
+<a href="delivery.html" class="btn btn2">go to payment</a>
+        </div>
+      </div>
+</div>
+<footer>
+    <div class="info">
+      <div class="links1">
+        <a href="">FAQ</a>
+        <a href="">TERMS AND CONDITIONS</a>
+        <a href="">PRIVACY POLICY</a>
+    
+      </div>
+      <div class="links2">
+        <a href="">CONTACT US</a>
+        <a href>PHONE: +45 20 51 89 23</a>
+        <a href>E-MAIL: info@byustudio.com</a>
+        <div class="social-media">
+          <a href="">
+            <img
+              src="/img/insta.png"
+              loading="lazy"
+              alt="instagram icon"
+              class="insta"
+          /></a>
+          <a href="">
+            <img
+              src="/img/facebook-3.png"
+              loading="lazy"
+              alt="instagram icon"
+              class="facebook"
+              loading="lazy"
+          /></a>
+          <a href=""> <img loading="lazy" src="/img/iconfinder_shopify_3018711.png" alt="shopify icon" loading="lazy" /></a>
+        </div>
+      </div>
+      <div class="logo"><img src="/img/Logo-Black.svg" alt="logo byu" loading="lazy"></div>
+      <div class="links3">
+        <a href="">SHIPPING AND RETURNS</a>
+        <a>DELIVERY OPTIONS</a>
+        <div class="cardsf">
+          <a href=""><img loading="lazy" src="/img/visa.png" alt="visa card icon" loading="lazy"/></a>
+          <a href=""> <img loading="lazy" src="/img/mastercard.png" alt="mastercard icon" loading="lazy"/></a>
+          <a href=""> <img loading="lazy" src="/img/paypal.png" alt="paypal icon" loading="lazy"/></a>
+      
+          
+        </div>
+   </div>
+  
+    <div class="links4">
+      <a href="">ABOUT US</a>
+      <a>GIFT CARDS</a>
+      <a>JOBS</a>
+      </div>
+  
+  </div>
+  
+  
+    <p class="copyright">
+      © Copyright - BYU Studio - Klareboderne 10, 1, DK-1115 København, CVR.
+      40912320
+    </p>
+  </footer>
+<!-- <script src="confirm.js"></script> -->
+<script src="basket.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- <script src="about.js"></script> -->
+<script src="shop.js"></script>
+</body>
+</html>
