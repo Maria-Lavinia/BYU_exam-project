@@ -29,6 +29,7 @@ body {
     background-position: 0 25%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-nav {
