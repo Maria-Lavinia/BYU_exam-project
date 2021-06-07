@@ -67,11 +67,11 @@ body {
 }
 .box3 {
   position: absolute;
-  top: 2%;
+  top: 2vw;
   left: 97%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 10px;
+  width: 70px;
+  height: 70px;
 }
 
 /*NAVIGATION*/
