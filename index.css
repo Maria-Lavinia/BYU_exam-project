@@ -377,12 +377,12 @@ h1 {
   padding: 7px 7px;
   position: relative;
   z-index: 1;
-  right: 12vw;
+  right: 7vw;
   top: 60vw;
 }
 .description {
   position: absolute;
-  top: 140vw;
+  top: 137vw;
   left: 30vw;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -553,7 +553,7 @@ footer img {
 
   .newsletter {
     position: absolute;
-    top: 310vw;
+    top: 300vw;
   }
 
   #box {
@@ -563,7 +563,7 @@ footer img {
     margin-left: 5vw;
     margin-top: 2vw;
     background-color: #f9e1bd;
-    top: 420vw;
+    top: 405vw;
   }
   #newsletter-title h1 {
     left: 9vw;
